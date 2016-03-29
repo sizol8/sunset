@@ -1,0 +1,151 @@
+<html>
+    
+    <head>
+        
+        <link href="style.css" rel="stylesheet" type="text/css">
+        
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+        
+    </head>
+    
+    <body>
+        
+        
+        <h1>SO YOU LIKE</h1>
+        <h2>VAPORWAVE</h2>
+        <img src="sun.gif" class="sun">
+        
+        <div class="container" id="main">
+            
+            <div class="category">
+                
+                <h3>4chan</h3>
+                
+                <a href="https://boards.4chan.org/b/">/b/</a>
+                <a href="https://boards.4chan.org/x/">/x/</a>
+                <a href="https://boards.4chan.org/v/">/v/</a>
+                <a href="https://boards.4chan.org/wg/">/wg/</a>
+                <a href="https://boards.4chan.org/gif/">/gif/</a>
+                <a href="https://boards.4chan.org/wsg/">/wsg/</a>
+                
+            </div>
+            
+            <div class="category">
+                
+                <h3>Social</h3>
+                
+                <a href="https://facebook.com/">facebook</a>
+                <a href="https://twitter.com/">twitter</a>
+                <a href="https://youtube.com/">youtube</a>
+                <a href="https://twitch.tv/">twitch</a>
+                <a href="https://discordapp.com/channels/@me">discord</a>
+                <a href="https://gmail.com/">gmail</a>
+                <a href="https://stackoverflow.com/">stack overflow</a>
+                
+            </div>
+            
+            <div class="category">
+                
+                <h3>Music</h3>
+                
+                <a href="https://soundcloud.com/">soundcloud</a>
+                <a href="https://whosampled.com/">whosampled</a>
+                <a href="https://songsterr.com/">songsterr</a>
+                <a href="http://www.youtube-mp3.org/">youtube-mp3</a>
+                
+            </div>
+            
+            <div class="category">
+                
+                <h3>Popculture</h3>
+                
+                <a href="https://gamepressure.com/">gamepressure</a>
+                <a href="https://mobafire.com/">mobafire</a>
+                <a href="http://filmweb.pl/">filmweb</a>
+                <a href="http://jbzd.pl/">jebzdzidy</a>
+                
+            </div>
+            
+            <div class="category">
+                
+                <h3>Random</h3>
+                
+                <a href="https://kat.cr/">kickass</a>
+                <a href="https://piratebays.co/">piratebay</a>
+                <a href="https://mega.nz/">mega</a>
+                <a href="https://mega.nz/">ipko</a>
+                <a href="https://mega.nz/">ebgz</a>
+                
+            </div>
+            
+        </div>
+        
+        <div class="container" id="second" style="display:none;">
+            
+            <div class="category" style="height: 0px;">
+                
+            </div>
+            
+            <div class="category">
+                
+                <h3>Playlists</h3>
+                
+                <a href="https://www.youtube.com/watch?v=0HMiVtCoCNY&list=LLO7M-4M_vt38hSoc6zJGAsg">liked videos</a>
+                <a href="https://www.youtube.com/watch?v=rFywcnKDVUk&list=PLzZ0CQPruwO9uJnybQH6KbHxXKWERLOUy">chill rap</a>
+                <a href="https://www.youtube.com/watch?v=yyDUC1LUXSU&list=PLzZ0CQPruwO8SEXjTW0guQ-MvLMRJegI8">pop</a>
+                <a href="https://www.youtube.com/watch?v=D0f8NfwRtpc&list=PLzZ0CQPruwO_z20uySHSCVCw801p7WOmz">festival trap</a>
+                <a href="https://www.youtube.com/watch?v=D0f8NfwRtpc&list=PLzZ0CQPruwO_z20uySHSCVCw801p7WOmz">trap</a>
+                <a href="https://www.youtube.com/watch?v=JyBV4yinJ38&list=RDJyBV4yinJ38">vaporwave</a>
+                <a href="https://www.youtube.com/watch?v=B0IwsK5MDsM&list=PLzZ0CQPruwO_IK3QBrIhVlHF2QJtL9chg">dubstep</a>
+                
+            </div>
+            
+            <div class="category">
+                
+                <h3>Streams</h3>
+                
+                <a href="https://soundcloud.com/">riot games</a>
+                <a href="https://whosampled.com/">esl csgo</a>
+                <a href="https://songsterr.com/">cohh carnage</a>
+                <a href="http://www.youtube-mp3.org/">imaqtpie</a>
+                <a href="http://www.youtube-mp3.org/">gosu</a>
+                
+            </div>
+            
+            <div class="category">
+                
+                <h3>IDK</h3>
+                
+                <a href="https://gamepressure.com/">what</a>
+                <a href="https://mobafire.com/">to</a>
+                <a href="http://filmweb.pl/">put</a>
+                <a href="http://jbzd.pl/">here</a>
+                
+            </div>
+            
+        </div>
+        
+        <label id="one" onclick="showMain();"></label>
+        <label id="two" onclick="showSecond();"></label>
+        
+        <script>
+            
+            function showMain() {
+                document.getElementById("one").style.border = "3px solid #43FDCA";
+                document.getElementById("two").style.border = "3px solid #EFCBA7";
+                document.getElementById("main").style.display = "inline";
+                document.getElementById("second").style.display = "none";
+            }
+            
+            function showSecond() {
+                document.getElementById("one").style.border = "3px solid #EFCBA7";
+                document.getElementById("two").style.border = "3px solid #43FDCA";
+                document.getElementById("main").style.display = "none";
+                document.getElementById("second").style.display = "inline";   
+            }
+            
+        </script>
+        
+    </body>
+    
+</html>
